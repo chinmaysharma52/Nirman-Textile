@@ -4,7 +4,7 @@ import type { Product } from "../types";
 import ProductCard from "../components/ProductCard";
 import ProductSkeleton from "../components/ProductSkeleton";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 const HomePage = () => {
   const [featured, setFeatured] = useState<Product[]>([]);
