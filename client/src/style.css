@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply font-sans bg-gradient-to-br from-indigo-50/60 via-slate-50 to-purple-50/60 text-slate-800 antialiased min-h-screen;
+  scroll-behavior: smooth;
+}
